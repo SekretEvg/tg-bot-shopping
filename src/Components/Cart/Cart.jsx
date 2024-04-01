@@ -10,9 +10,9 @@ const Cart = ({ cartItems, onCheckout}) => {
     0
   );
   const onSendData = useCallback(() => {
-    const data = {totalPrice};
+    const data = {products: cartItems, totalPrice};
     tg.sendData(JSON.stringify(data));
-  }, [totalPrice]);
+  }, [totalPrice, cartItems]);
 
   useEffect(() => {
     tg.onEvent('mainButtonClicked', onSendData);
