@@ -5,6 +5,7 @@ import saladImg from "../images/salad.png";
 import waterImg from "../images/water.png";
 import iceCreamImg from "../images/icecream.png";
 import kebabImg from "../images/kebab.png";
+import eggplantImage from '../images/eggplant.png';
 
 export const getData = () => {
   return [
@@ -15,5 +16,6 @@ export const getData = () => {
     { id: 5, title: "Салат", price: 300, image: saladImg },
     { id: 6, title: "Вода из Байкала", price: 300, image: waterImg },
     { id: 7, title: "Мороженное", price: 300, image: iceCreamImg },
+    { id: 8, title: "Хуй в рот", price: 300, image: eggplantImage },
   ];
 };
