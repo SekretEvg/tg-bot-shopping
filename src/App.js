@@ -46,13 +46,14 @@ function App() {
   };
 
   const onCheckout = () => {
-    tg.MainButton.text = 'Pay';
+    tg.MainButton.text = 'Отправить';
     tg.MainButton.show();
   };
 
   return (
     <>
-      <h1 className="heading">Order Food</h1>
+      <h1 className="heading">Сделай заказ в Софич38</h1>
+      <h2 className="heading">У меня все по триста</h2>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {foods.map((food) => (

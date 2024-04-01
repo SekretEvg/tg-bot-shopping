@@ -23,10 +23,10 @@ const Cart = ({ cartItems, onCheckout}) => {
 
   return (
     <div className="cart__container">
-      {cartItems.length === 0 ? "No items in cart" : ""}
-      <br /> <span>Total Price: ${totalPrice.toFixed(2)}</span>
+      {cartItems.length === 0 ? "Корзина пуста" : ""}<br/> 
+      <span style={{marginLeft: '5px'}}> Общая сумма: {totalPrice.toFixed(2)}РУБ</span>
       <Button
-        title={`${cartItems.length === 0 ? "Order !" : "Checkout"}`}
+        title={`${cartItems.length === 0 ? "Пусто" : "Готово"}`}
         type={"checkout"}
         disable={cartItems.length === 0 ? true : false}
         onClick={onCheckout}
